@@ -36,12 +36,15 @@ import List from './components/List.jsx';
 */
 
 function App() {
-	let arr = ['reading', 'game', 'cook'];
-	// 전개연산자 ( Spread Operator ) : heap 메모리에 있는 값을 물리적으로 꺼내서 전개
-	let newArr = [...arr];
-	newArr[0] = 'exercise';
-	console.log(newArr);
-	console.log(arr);
+	let student = {
+		name: 'David',
+		age: 20,
+	};
+
+	let newStudent = { ...student };
+	newStudent.name = 'Andy';
+	console.log(newStudent);
+	console.log(student);
 
 	let isPop = true;
 	let isFooter = true;
